@@ -13,6 +13,14 @@ import Onion from "../../assets/images/burger/default.svg"
 import bunbottom from '../../assets/images/burger/bun_bottom.svg'
 import plus from '../../assets/images/plus.svg'
 import minus from '../../assets/images/minus.svg'
+import etherium from '../../assets/images/Etherium.svg'
+import bitcoin from '../../assets/images/bitcoin.svg'
+import Googlepay from '../../assets/images/GooglePay.svg'
+import iospay from '../../assets/images/iospay.svg'
+import mastercard from '../../assets/images/Mastercard.svg'
+import paypal from '../../assets/images/PayPal.svg'
+import visa from '../../assets/images/Visa.svg'
+import ketchup from '../../assets/images/ketchup.svg'
 
 const Home = () => {
     const cards = [
@@ -26,58 +34,87 @@ const Home = () => {
         },
         {
             id: 2,
-            image: cutlet,
-            title: "cutlet",
+            image: cucumber,
+            title: "cucumber",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         },
         {
             id: 3,
-            image: cutlet,
-            title: "cutlet",
+            image: Onion,
+            title: "Onion",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         },
         {
             id: 4,
-            image: cutlet,
-            title: "cutlet",
+            image: bunbottom,
+            title: "bunbottom",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         }, {
             id: 5,
-            image: cutlet,
-            title: "cutlet",
+            image: tomatoe,
+            title: "tomatoe",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         }, {
             id: 6,
-            image: cutlet,
-            title: "cutlet",
+            image: cheese,
+            title: "cheese",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         },
         {
             id: 7,
-            image: cutlet,
-            title: "cutlet",
+            image: salad,
+            title: "salad",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         },
         {
             id: 8,
-            image: cutlet,
-            title: "cutlet",
+            image: mayo,
+            title: "mayo",
             leftImage: plus,
             number: "2",
             rightImage: minus,
         }
+    ]
+    const payments = [{
+        id: 1,
+        image: visa
+    },
+    {
+        id: 2,
+        image: mastercard
+    },
+    {
+        id: 3,
+        image: iospay
+    },
+    {
+        id: 4,
+        image: Googlepay
+    },
+    {
+        id: 5,
+        image: paypal
+    },
+    {
+        id: 6,
+        image: bitcoin
+    },
+    {
+        id: 7,
+        image: etherium
+    }
     ]
     return (
         <div className='mx-0 lg:mx-[5%]'>
@@ -123,31 +160,35 @@ const Home = () => {
 
 
                         <div className='backgroud relative w-[20%]'>
-                            <img src={buntop} alt="buntop" className='z-[14] h-[110px] top-[70px] left-[150px] absolute' />
-                            <img src={cheese} alt="buntop" className='z-[13] absolute h-[48px] top-[155px] left-[150px]' />
-                            <img src={salad} alt="buntop" className='z-[12] absolute h-[60px] top-[150px] left-[157px]' />
-                            <img src={cutlet} alt="buntop" className=' z-[11] absolute h-[85px] top-[140px] left-[152px]' />
-                            <img src={mayo} alt="buntop" className=' z-[10] absolute h-[50px] top-[190px] left-[147px] ' />
-                            <img src={cucumber} alt="buntop" className=' z-[9] absolute  h-[223px] top-[89px] left-[141px] ' />
-                            <img src={tomatoe} alt="buntop" className=' z-[8] absolute  h-[64px] top-[198px] left-[164px] rotate-3' />
-                            <img src={tomatoe} alt="buntop" className=' z-[8] absolute  h-[70px] top-[192px] left-[262px] ' />
-                            <img src={cutlet} alt="buntop" className=' z-[7] absolute h-[83px] top-[190px] left-[150px]' />
-                            <img src={cucumber} alt="buntop" className=' z-[6] absolute  h-[223px] top-[128px] left-[140px] ' />
-                            <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[228px] left-[150px]  ' />
-                            <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[233px] left-[220px]  ' />
-                            <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[235px] left-[266px]  ' />
-                            <img src={cheese} alt="buntop" className='z-[4] absolute h-[46px] top-[257px] left-[150px]' />
-                            <img src={salad} alt="buntop" className='z-[3] absolute h-[62px] top-[242px] left-[150px]' />
-                            <img src={mayo} alt="buntop" className=' z-[2] absolute h-[50px] top-[263px] left-[143px] ' />
-                            <img src={bunbottom} alt="buntop" className='z-[1] h-[90px] top-[256px] left-[142px] absolute' />
+                            <div className='absolute left-3 top-0 right-0 bottom-0'>
+                                <img src={buntop} alt="buntop" className='z-[14] h-[110px] top-[120px] left-[40px] absolute' />
+                                <img src={cheese} alt="buntop" className='z-[13] absolute h-[48px] top-[205px] left-[41px]' />
+                                <img src={salad} alt="buntop" className='z-[12] absolute h-[66px] top-[191px] left-[35px]' />
+                                <img src={cutlet} alt="buntop" className=' z-[11] absolute h-[85px] top-[185px] left-[43px]' />
+                                <img src={mayo} alt="buntop" className=' z-[10] absolute h-[53px] top-[236px] left-[36px] ' />
+                                <img src={cucumber} alt="buntop" className=' z-[9] absolute  h-[241px] top-[126px] left-[28px] ' />
+                                <img src={tomatoe} alt="buntop" className=' z-[8] absolute  h-[80px] top-[241px] left-[43px] rotate-3' />
+                                <img src={tomatoe} alt="buntop" className=' z-[8] absolute  h-[82px] top-[236px] left-[138px] ' />
+                                <img src={cutlet} alt="buntop" className=' z-[7] absolute h-[83px] top-[242px] left-[45px]' />
+                                <img src={cucumber} alt="buntop" className=' z-[6] absolute  h-[223px] top-[179px] left-[33px] ' />
+                                <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[286px] left-[47px]  ' />
+                                <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[287px] left-[117px]  ' />
+                                <img src={Onion} alt="buntop" className=' z-[5] absolute  h-[70px] top-[281px] left-[153px]  ' />
+                                <img src={cheese} alt="buntop" className='z-[4] absolute h-[46px] top-[315px] left-[43px]' />
+                                <img src={salad} alt="buntop" className='z-[3] absolute h-[62px] top-[306px] left-[43px]' />
+                                <img src={mayo} alt="buntop" className=' z-[2] absolute h-[50px] top-[329px] left-[37px] ' />
+                                <img src={bunbottom} alt="buntop" className='z-[1] h-[90px] top-[322px] left-[36px] absolute' />
+                                <img src={ketchup} alt="buntop" className='z-[1] h-[90px] top-[348px] left-[256px] absolute' />
+
+                            </div>
                         </div>
 
 
                         <div className='flex flex-col w-[30%] '>
                             <div className='flex items-start border-b-[2px] border-b-[#F5F5FF]'>
-                                <h1 className='pb-6 text-[36px] font-semibold text-[#1F2939]'>Summary</h1>
+                                <h1 className='pb-4 text-[36px] font-semibold text-[#1F2939]'>Summary</h1>
                             </div>
-                            <div className='py-[25px]  flex justify-between items-center '>
+                            <div className='py-[15px]  flex justify-between items-center '>
                                 <div >
                                     <p className='text-[36px] text-[#5243C2] font-extrabold'>$12.31</p>
                                 </div>
@@ -169,9 +210,9 @@ const Home = () => {
                                     <p className='px-[8px] text-sm text-[#1F2939] font-semibold'>7 min</p>
                                 </div>
                             </div>
-                            <div className='flex items-center pt-[105px] '>
-                                <p className='text-2xl text-[#FF4D4F] py-[6px] px-[16px]'>+ Tomato Ketchup</p>
-                                <p className='py-[6px] px-[16px]'>1.2 oz</p>
+                            <div className='flex items-center pt-[83px] '>
+                                <p className='text-2xl text-[#FF4D4F]  px-[16px]'>+ Tomato Ketchup</p>
+                                <p className=' px-[16px]'>1.2 oz</p>
                             </div>
                         </div>
 
@@ -197,6 +238,26 @@ const Home = () => {
 
                                 </div>
                             </div>)))}
+                    </div>
+                </div>
+            </div>
+            {/* footer */}
+            <div className='flex justify-center'>
+                <div className='container'>
+                    <div className='flex justify-between items-center'>
+                        <div className='flex justify-center items-center'>
+                            <p className='py-5 px-5 text-[12px] text-[#949BA6] '>2022. Make Your Burger</p>
+                            <p className='py-5 px-5 text-[#5243C2] text-[12px] '>Privacy Policy</p>
+                            <span className='border-r border-r-slate-400 py-3'></span>
+                            <p className='py-5 px-5 text-[#5243C2] text-[12px]'>Terms & Conditions</p>
+                        </div>
+                        <div className='flex justify-center items-center'>
+                            {payments.map((single) => ((
+                                <div className='px-2'>
+                                    <img src={single.image} alt="images" className='h-6 cursor-pointer' />
+                                </div>
+                            )))}
+                        </div>
                     </div>
                 </div>
             </div>
