@@ -14,10 +14,17 @@ body {
   height: 400px;
   width: 400px;
 }
+@media screen and (max-width: 767px) {
+  .backgroud {
+    height: 300px;
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .backgroud {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
   }
 }
 
@@ -31,4 +38,8 @@ body {
 
 .burger-button :hover::after {
   transform: scaleX(1);
+}
+
+.bg-rgba {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
