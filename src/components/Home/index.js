@@ -126,14 +126,14 @@ const Home = () => {
     return (
         <div className='mx-0 lg:mx-[5%] '>
             {/* header */}
-            <div className='flex justify-center'>
+            <div className='flex justify-center p-3'>
                 <div className='container'>
                     <div className='flex justify-between items-center py-8'>
                         <div className='flex items-center '>
                             <div className='bg-[#F5F5FF] p-5 rounded-full'>
                                 <img src={Logo} alt="Logo" />
                             </div>
-                            <div className='px-[80px] burger-button hidden lg:flex md:flex '>
+                            <div className='px-[80px] burger-button hidden lg:flex  '>
                                 <button className='text-base text-[#1F2939] font-normal pr-[60px] '>Discover</button>
                                 <button className='text-base text-[#1F2939] font-normal' >Make Your Burger</button>
                             </div>
@@ -165,22 +165,22 @@ const Home = () => {
                                 <div className='flex justify-end w-full h-full'>
                                     <div className='bg-white w-[50%] overflow-y-auto  p-6 '>
                                         <svg onClick={() => setOpen(false)} xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>
-                                        <div className='flex items-center justify-center flex-col gap-10'>
-                                            <div className='bg-[#F5F5FF] p-3 rounded-full cursor-pointer'>
+                                        <div className='flex items-center justify-center flex-col gap-10 '>
+                                            <div className='bg-[#F5F5FF] p-3 rounded-full cursor-pointer '>
                                                 <img src={avatar} alt="Logo" />
                                             </div>
-                                            <div className=' burger-button flex flex-col gap-5 '>
-                                                <button className='text-base text-[#1F2939] font-normal  '>Discover</button>
-                                                <button className='text-base text-[#1F2939] font-normal' >Make Your Burger</button>
+                                            <div className='burger-button flex flex-col gap-10'>
+                                                <button className=' text-base text-[#1F2939]   font-normal  '>Discover</button>
+                                                <button className=' text-base text-[#1F2939] font-normal burger-button' >Make Your Burger</button>
                                             </div>
-                                            <div className='flex items-center flex-col gap-5'>
-                                                <button className='flex items-center  py-[6px] px-[12px] gap-2 bg-[#ffeded] text-[#FF4D4F] border-[#ffeded] rounded-3xl'>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                        <path d="M14 10.9467V13.304C14.0001 13.4728 13.9361 13.6353 13.8211 13.7588C13.706 13.8823 13.5484 13.9575 13.38 13.9693C13.0887 13.9893 12.8507 14 12.6667 14C6.77533 14 2 9.22467 2 3.33333C2 3.14933 2.01 2.91133 2.03067 2.62C2.04248 2.45163 2.11772 2.29401 2.2412 2.17894C2.36468 2.06387 2.52722 1.99992 2.696 2H5.05333C5.13603 1.99992 5.2158 2.03057 5.27715 2.08601C5.33851 2.14145 5.37706 2.21772 5.38533 2.3C5.40067 2.45333 5.41467 2.57533 5.428 2.668C5.56049 3.59262 5.832 4.49189 6.23333 5.33533C6.29667 5.46867 6.25533 5.628 6.13533 5.71333L4.69667 6.74133C5.5763 8.79097 7.2097 10.4244 9.25933 11.304L10.286 9.868C10.328 9.80933 10.3892 9.76725 10.459 9.7491C10.5288 9.73095 10.6028 9.73787 10.668 9.76867C11.5113 10.1692 12.4104 10.4401 13.3347 10.572C13.4273 10.5853 13.5493 10.6 13.7013 10.6147C13.7835 10.6231 13.8596 10.6617 13.9149 10.7231C13.9702 10.7844 14.0008 10.8641 14.0007 10.9467H14Z" fill="#FF4D4F" />
-                                                    </svg>
-                                                    Call Me Back</button>
-                                                <p className='text-base text-[#1F2939] font-normal px-20 cursor-pointer' >8 800 437-87-22</p>
-                                            </div>
+
+                                            <button className='flex items-center  py-[6px] px-[12px] gap-2 bg-[#ffeded] text-[#FF4D4F] border-[#ffeded] rounded-3xl'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M14 10.9467V13.304C14.0001 13.4728 13.9361 13.6353 13.8211 13.7588C13.706 13.8823 13.5484 13.9575 13.38 13.9693C13.0887 13.9893 12.8507 14 12.6667 14C6.77533 14 2 9.22467 2 3.33333C2 3.14933 2.01 2.91133 2.03067 2.62C2.04248 2.45163 2.11772 2.29401 2.2412 2.17894C2.36468 2.06387 2.52722 1.99992 2.696 2H5.05333C5.13603 1.99992 5.2158 2.03057 5.27715 2.08601C5.33851 2.14145 5.37706 2.21772 5.38533 2.3C5.40067 2.45333 5.41467 2.57533 5.428 2.668C5.56049 3.59262 5.832 4.49189 6.23333 5.33533C6.29667 5.46867 6.25533 5.628 6.13533 5.71333L4.69667 6.74133C5.5763 8.79097 7.2097 10.4244 9.25933 11.304L10.286 9.868C10.328 9.80933 10.3892 9.76725 10.459 9.7491C10.5288 9.73095 10.6028 9.73787 10.668 9.76867C11.5113 10.1692 12.4104 10.4401 13.3347 10.572C13.4273 10.5853 13.5493 10.6 13.7013 10.6147C13.7835 10.6231 13.8596 10.6617 13.9149 10.7231C13.9702 10.7844 14.0008 10.8641 14.0007 10.9467H14Z" fill="#FF4D4F" />
+                                                </svg>
+                                                Call Me Back</button>
+                                            <p className='text-base text-[#1F2939] font-normal cursor-pointer' >8 800 437-87-22</p>
+
 
 
 
@@ -314,26 +314,26 @@ const Home = () => {
                             <button className='py-5 px-5 text-[#5243C2] text-[12px]'>Terms & Conditions</button>
                         </div>
                         <div className='flex justify-center items-center gap-4'>
-                            <div className='bg-[#FFF4EE] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#e9e9eb] border-[#e9e9eb] border rounded py-1 px-2'>
                                 <img src={visa} className='h-4 w-4 cursor-pointer' alt="visa" />
                             </div>
 
-                            <div className='bg-[#FFF4EE] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#FFF4EE] border-[#FFF4EE] border rounded py-1 px-2'>
                                 <img src={mastercard} className='h-4 w-4 cursor-pointer' alt="mastercard" />
                             </div>
-                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-1 px-2'>
                                 <img src={paypal} className='h-4 w-4 cursor-pointer' alt="paypal" />
                             </div>
-                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-1 px-2'>
                                 <img src={iospay} className='h-4 w-4 cursor-pointer ' alt="iospay" />
                             </div>
-                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-1 px-2'>
                                 <img src={Googlepay} className='h-4 w-4 cursor-pointer' alt="Googlepay" />
                             </div>
-                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-2 px-2'>
+                            <div className='bg-[#F3FBFF] border-[#FFF4EE] border rounded py-1 px-2'>
                                 <img src={bitcoin} className='h-4 w-4 cursor-pointer' alt="bitcoin" />
                             </div>
-                            <div className='bg-[#FFF4EE] border-[#F1F4FF] border rounded py-2 px-2'>
+                            <div className='bg-[#FFF4EE] border-[#F1F4FF] border rounded py-1 px-2'>
                                 <img src={etherium} className='h-4 w-4 cursor-pointer' alt="etherium" />
                             </div>
                         </div>
